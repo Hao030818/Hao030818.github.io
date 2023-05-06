@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+p#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.crocodile {
+width: 200px;
+height: 200px;
+background-image: url('https://img0.baidu.com/it/u=95215394,2033939792&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=571');
+background-repeat: no-repeat;
+background-size: cover;
+transition: all 0.5s ease-in-out;
+}
+
+.crocodile.happy {
+background-position: 0 0;
+}
+
+.crocodile.angry {
+background-position: -20px 0;
+}
+
+.crocodile.sad {
+background-position: 20px 0;
+}
