@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MBTI Quiz</title>
-	<script src="puzzle javascript.js"></script>
+  <title>Crocodile Bathing Game</title>
+  <link rel="stylesheet" href="crocodile.css">
 </head>
 <body>
-	<h1>What's Your MBTI?</h1>
-	<form id="quizForm">
-		<label for="q1">I enjoy socializing with large groups of people.</label>
-		<input type="radio" id="q1a" name="q1" value="E">
-		<label for="q1a">Strongly Agree</label>
-		<input type="radio" id="q1b" name="q1" value="I">
-		<label for="q1b">Strongly Disagree</label><br><br>
-
-		<label for="q2">I prefer to work alone rather than in a group.</label>
-		<input type="radio" id="q2a" name="q2" value="I">
-		<label for="q2a">Strongly Agree</label>
-		<input type="radio" id="q2b" name="q2" value="E">
-		<label for="q2b">Strongly Disagree</label><br><br>
-
-		<label for="q3">I trust my intuition over my logical reasoning.</label>
-		<input type="radio" id="q3a" name="q3" value="N">
-		<label for="q3a">Strongly Agree</label>
-		<input type="radio" id="q3b" name="q3" value="S">
-		<label for="q3b">Strongly Disagree</label><br><br>
-
-		<label for="q4">I enjoy having a plan and sticking to it.</label>
-		<input type="radio" id="q4a" name="q4" value="J">
-		<label for="q4a">Strongly Agree</label>
-		<input type="radio" id="q4b" name="q4" value="P">
-		<label for="q4b">Strongly Disagree</label><br><br>
-
-		<label for="q5">I am more interested in the big picture than the details.</label>
-		<input type="radio" id="q5a" name="q5" value="N">
-		<label for="q5a">Strongly Agree</label>
-		<input type="radio" id="q5b" name="q5" value="S">
-		<label for="q5b">Strongly Disagree</label><br><br>
-
-		<button type="button" onclick="checkAnswer()">Submit</button>
-	</form>
-	<div id="resultBox"></div>
+    <div class="container">
+      <h1>Crocodile Bathing Game</h1>
+      <div class="crocodile"></div>
+      <p>Find the correct bathing temperature (between 0 and 100 degrees Celsius):</p>
+      <input type="text" id="guess" placeholder="Enter your guess...">
+      <button onclick="guessNumber()">Guess</button>
+      <p id="result"></p>
+    </div>
+  <script src="crocodile.js"></script>
 </body>
 </html>
